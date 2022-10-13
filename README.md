@@ -2,17 +2,15 @@
 mini object detection
 
 ## WHAT
-detects objects. based on [https://github.com/bbferka/odu_iai](https://github.com/bbferka/odu_iai) dataset.
+Detects objects. Based on [https://github.com/bbferka/odu_iai](https://github.com/bbferka/odu_iai) dataset.
 
 ## WHERE
-somewhere on your computer
+Somewhere on your computer (hopefully!).
 
 ## HOW
+Check scripts if you're a nerd. You should first clone into the repo mentioned above, make sure you know where on your system it is. Then checkout `datamaker.py` which makes you the samples. Then checkout `fancy.ipynb` which makes you the model. You can skip all of this and instead use the model I have uploaded. But you will need to run the `detect_single.py` (no pun intended) given the path to the image of the object you want classified. If your folder structure differs from normal, or if you get errors in prediction, run the fancy file again, because it will recreate the lables. (I couldn't just save the LabelBinarizer state, unfortunately)
 
-Check scripts. but overall, you should first clone into the repo mentioned above, make sure you know where on your system it is. then checkout datamaker which makes you the samples. then checkout `fancy.ipynb` which makes you the model. you can skip all of this and instead use the model that I have uploaded. but you will need to run the `detect_single.py` (no pun intended) given the path to the image pof the object you want classified. if your folder structure differs than normal, or if you get errors, run the fancy file again, as it will recreate the lables. (I couldn't just save the LabelBinarizer state, unfortunately)
-
-you also get log files to help you debug. add stuff there, guide is in each python file. 
+You also get log files to help you debug. Add stuff there in scripts, the guide for which is in each python file. 
 
 ## WHY
 Because :P 
-
