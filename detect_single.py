@@ -1,7 +1,9 @@
+import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
+
 from keras.models import load_model
 import logging
 import argparse
-import os
 import cv2
 from sklearn.preprocessing import LabelBinarizer
 import pandas as pd
@@ -55,7 +57,6 @@ class ObjDetect(object):
 
 
 if __name__ == '__main__':
-    os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'  # or any {'0', '1', '2'}
     parser = argparse.ArgumentParser(
         description='look into the eyes of the code',
         epilog="add stuff, if need be"
